@@ -1,2 +1,4 @@
-package LoginTestCasses;public class Bothcorrect {
+package LoginTestCasses;
+
+public class Bothcorrect {
 }

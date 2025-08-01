@@ -1,2 +1,4 @@
-package LoginTestCasses;public class CorrectPassword {
+package LoginTestCasses;
+
+public class CorrectPassword {
 }
