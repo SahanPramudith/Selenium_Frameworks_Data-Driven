@@ -28,7 +28,7 @@
     </test>
     <test name="IncorrectPassword">
         <parameter name="username" value="Admin"/>
-        <parameter name="password" value="admin123"/>
+        <parameter name="password" value="admin1283"/>
         <parameter name="validation" value="Invalid"/>
         <classes>
             <class name="DataDrivenTest.LoginUsingParameters"/>

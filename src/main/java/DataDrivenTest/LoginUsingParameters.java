@@ -15,7 +15,7 @@ public class LoginUsingParameters {
     WebDriver driver;
     @Test
     @Parameters({"username","password","validation"})
-    public void loginTestScenario(String password ,String username,String expectValidation) throws InterruptedException {
+    public void loginTestScenario(String username ,String password,String expectValidation) throws InterruptedException {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
