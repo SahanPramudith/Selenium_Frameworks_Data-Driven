@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -18,8 +19,12 @@ public class BothIncorrect {
         driver.get(" https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
         WebElement useName = driver.findElement(By.xpath("//input[@placeholder='Username']"));
-        useName.sendKeys("Admin");
+        useName.sendKeys("Admina");
        WebElement password = driver.findElement(By.xpath("//input[@placeholder='Password']"));
-        password.sendKeys("admin123");
+        password.sendKeys("admin1a23");
+    }
+    @AfterMethod
+    public void colseBorw(){
+        driver.quit();
     }
 }
