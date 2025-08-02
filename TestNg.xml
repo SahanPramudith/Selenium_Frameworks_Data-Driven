@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<suite name="LoginTest">
+    <test name="LoginTest">
+        <classes>
+            <class name="LoginTestCasses.Bothcorrect"/>
+            <class name="LoginTestCasses.BothIncorrect"/>
+            <class name="LoginTestCasses.CorrectPassword"/>
+            <class name="LoginTestCasses.InCorrectPassword"/>
+        </classes>
+
+    </test>
+</suite>
