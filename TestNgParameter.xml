@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
+
 <suite name="LoginTest">
     <test name="BothCorrect">
         <parameter name="username" value="Admin"/>
         <parameter name="password" value="admin123"/>
         <parameter name="validation" value="valid"/>
         <classes>
-            <class name="LoginTestCasses.Bothcorrect"/>
+            <class name="DataDrivenTest.LoginUsingParameters"/>
         </classes>
     </test>
     <test name="BothIncorrect">
@@ -14,15 +15,15 @@
         <parameter name="password" value="admin"/>
         <parameter name="validation" value="Invalid"/>
         <classes>
-            <class name="LoginTestCasses.BothIncorrect"/>
+            <class name="DataDrivenTest.LoginUsingParameters"/>
         </classes>
     </test>
     <test name="correctPassword">
-        <parameter name="username" value="Admin"/>
+        <parameter name="username" value="Admi"/>
         <parameter name="password" value="admin123"/>
         <parameter name="validation" value="Invalid"/>
         <classes>
-            <class name="LoginTestCasses.CorrectPassword"/>
+            <class name="DataDrivenTest.LoginUsingParameters"/>
         </classes>
     </test>
     <test name="IncorrectPassword">
@@ -30,7 +31,7 @@
         <parameter name="password" value="admin123"/>
         <parameter name="validation" value="Invalid"/>
         <classes>
-            <class name="LoginTestCasses.InCorrectPassword"/>
+            <class name="DataDrivenTest.LoginUsingParameters"/>
         </classes>
     </test>
 </suite>
