@@ -1,5 +1,7 @@
 package DataDrivenUsingExcel;
 
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
@@ -29,6 +31,16 @@ public class DataDriveTestWithExcel {
         int TotalCellNum = sheet.getRow(0).getLastCellNum();
         System.out.println("TotalCellNum = " + TotalCellNum);
         System.out.println("totalRow = " + totalRow);
+
+        for(int i=1;i<totalRow;i++){
+            XSSFRow  row = sheet.getRow(i);
+            for (int j = 0; j < TotalCellNum; j++) {
+                XSSFCell cell = row.getCell(j);
+                String celval = cell.toString();
+                System.out.print( celval+"\t\t");
+            }
+            System.out.println();
+        }
 
 
 
