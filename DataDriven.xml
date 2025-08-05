@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <suite name="LoginTest DataProvider ">
+<!--    <test name="BothCorrect">-->
+<!--        <classes>-->
+<!--            <class name="DataDrivenTestingDataProvider.LoginUsingDataProvider"/>-->
+<!--        </classes>-->
+<!--    </test>-->
     <test name="BothCorrect">
         <classes>
-            <class name="DataDrivenTestingDataProvider.LoginUsingDataProvider"/>
+            <class name="DataDrivenUsingExcel.DataDriveTestWithExcel"/>
         </classes>
     </test>
 </suite>
